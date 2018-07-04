@@ -35,43 +35,33 @@ public class FWMS_COMPANY_DEFAULT {
 	@Column(length=100)
 	private String WMS_SCHEMA_PASSWORD;//
 	
-	/** The wms schema string. */
 	@Column(length=100)
 	private String WMS_SCHEMA_STRING;//
 	
-	/** The smtp server. */
 	@Column(length=100)
 	private String SMTP_SERVER;
 	
-	/** The smtp port. */
 	@Column(length=100)
 	private String SMTP_PORT;
 	
-	/** The smtp email address. */
 	@Column(length=100)
 	private String SMTP_EMAIL_ADDRESS;
 	
-	/** The smtp your name. */
 	@Column(length=100)
 	private String SMTP_YOUR_NAME;
 	
-	/** The smtp require reciept. */
 	@Column(length=100)
 	private String SMTP_REQUIRE_RECIEPT;
 	
-	/** The smtp is require auth. */
 	@Column(length=100)
 	private String SMTP_IS_REQUIRE_AUTH;
 	
-	/** The smtp user name. */
 	@Column(length=100)
 	private String SMTP_USER_NAME;
 	
-	/** The smtp password. */
 	@Column(length=100)
 	private String SMTP_PASSWORD;
 
-	/** The wms report para. */
 	@OneToOne(mappedBy="fWMS_COMPANY_DEFAULT")
 	FWMS_REPORT_PARA fWMS_REPORT_PARA;
 	

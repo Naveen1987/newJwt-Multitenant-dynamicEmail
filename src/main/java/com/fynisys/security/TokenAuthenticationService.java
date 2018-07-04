@@ -176,7 +176,7 @@ public class TokenAuthenticationService {
 			    				json.put("msg","Successfully login");
 			    				json.put("displayname", account.getSVU_NAME());
 			    				json.put("svc_uid", account.getSVC_UID());
-			    				json.put("lastseen", account.getSVU_USER_LASTSEEN());
+			    				json.put("lastseen", account.getSVU_USER_LASTSEEN().getTimeInMillis());
 			    				json.put("roleid", account.getFund_roles().getFRL_ROLEID());
 			    				json.put("rolename", account.getFund_roles().getFRL_ROLENAME());
 			    				account.setSVU_USER_LASTSEEN(Calendar.getInstance());
